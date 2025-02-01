@@ -8,7 +8,7 @@ You have to solve [Day 10 of the Advent of Code 2024 **Part 1**](https://advento
 
 The problem is protected by Copyright, in consequence we cannot copy it here and you have to read the linked website and understand the problem. You **don't need** to connect to Advent of Code to read **Part 1** of the problem.
 
-You must to implement your solution in a file named `hicking.py` which takes only one argument : the file name that contains the puzzle input. Tests are given through the `check` script as usual.
+You have to implement your solution in a file named `hicking.py` which takes only one argument : the file name that contains the puzzle input. Tests are given through the `check` script as usual.
 
 Your program should print the number of hicking trails asked in **Part 1** of the problem. Like in the examples given below.
 
