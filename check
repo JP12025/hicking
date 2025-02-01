@@ -67,6 +67,13 @@ run_test () {
     TEST_OUT=".test/${TEST_NUM}_test.out"
     TEST_DIFF=".test/${TEST_NUM}_test.diff"
     python ${EXP_SCRIPT} ${TEST_PARAM} > ${TEST_OUT}
+    NB_LINES=`cat ${TEST_OUT} | wc -c`
+    if [ ${NB_LINES} -eq 0 ]
+    then
+        printf "\n"
+        printf "${TEST_NUM} ${COLOR_RED}\xE2\x9C\x97${COLOR_REST} ${TEST_NAME}\n"
+        printf "Your script prints nothing\n"
+    fi
     diff ${TEST_EXP} ${TEST_OUT} > ${TEST_DIFF}
     NB_DIFF=`cat ${TEST_DIFF} | wc -l`
     NB_TEST_TOTAL=$((NB_TEST_TOTAL+1))
