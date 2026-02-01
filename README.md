@@ -14,11 +14,11 @@ Your program should print the number of hicking trails asked in **Part 1** of th
 
 # When to Do it
 
-By Sunday, february 23, 2025 at 11:59 PM
+By Sunday, february 8, 2025 at 11:59 PM
 
 # How to Test
 
-Test your script with command `./check hicking.py`
+Test your script with command `./check hicking.py` or `pytest test_hichking.py`
 
 Or run tests directly as follows:
 ```bash
