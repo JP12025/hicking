@@ -6,8 +6,7 @@ import subprocess
 import pytest
 
 base_param = [os.path.join(os.path.dirname(__file__), "hicking.py")]
-if sys.platform == "win32":
-    base_param = ["python"] + base_param
+base_param = ["python"] + base_param
 
 
 DATA_IN = [os.path.join(os.getcwd(), ".test", f"{i:0>2}.in") for i in range(1, 12)]
